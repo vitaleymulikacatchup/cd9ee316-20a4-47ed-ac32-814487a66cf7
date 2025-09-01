@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter_Tight, Poppins } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -10,14 +10,12 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: "MemeCoin Spark",
-  description: "Create a playful, single-page landing for a memecoin with clear sections and a friendly vibe"
+  description: "Create a playful, single-page landing for a memecoin with clear sections and a friendly vibe",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
       <body className={`${interTight.variable} antialiased`}>
